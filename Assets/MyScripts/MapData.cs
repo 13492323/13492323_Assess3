@@ -35,7 +35,7 @@ public class MapData : MonoBehaviour
     }
     private void Awake()
     {
-        #region µØÍ¼²¹È«
+        #region ï¿½ï¿½Í¼ï¿½ï¿½È«
         int[,] levelMapAll = new int[levelMap.GetLength(0) * 2 - 1, levelMap.GetLength(1) * 2];
         for (int i = 0; i < levelMapAll.GetLength(0); i++)
         {
@@ -49,7 +49,6 @@ public class MapData : MonoBehaviour
                     }
                     else
                     {
-                        Debug.Log(i + "   " + (levelMapAll.GetLength(1) - j));
                         levelMapAll[i, j] = levelMap[i, levelMapAll.GetLength(1) - j - 1];
                     }
                 }
