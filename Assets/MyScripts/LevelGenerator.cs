@@ -127,7 +127,7 @@ public class LevelGenerator : MonoBehaviour
         //Éú³É1 ÔÚnowPos;
         GameObject spriteTemp = Instantiate(spriteList[num_2], this.transform);
         spriteTemp.transform.position = nowPos;
-        int rotate_0_priority, rotate_90_priority, rotate_180_priority, rotate_270_priority;
+        int rotate_0_priority, rotate_90_priority;
         rotate_0_priority = PosLeft(nowPos, num_1, num_2) + PosRight(nowPos, num_1, num_2);
         rotate_90_priority = PosUp(nowPos, num_1, num_2) + PosDown(nowPos, num_1, num_2);
         int[] priorityList = new int[] { rotate_0_priority, rotate_90_priority };
