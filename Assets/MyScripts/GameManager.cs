@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
 
     public AudioSource BGMSource;
     public AudioSource EffectSource;
+    public AudioSource EffectSourceWall;
 
     public bool startGame = false;
 
@@ -39,6 +40,10 @@ public class GameManager : MonoBehaviour
         
     }
 
+    public void PlayWallAudio()
+    {
+        EffectSourceWall.clip = EffectClipList[2];
+    }   
     public void StartGame()
     {
         startGame = true;
